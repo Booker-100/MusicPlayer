@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="theme">
+        <attr name="appbg" format="reference"/>
+        <attr name="press_color" format="reference"/>
+        <attr name="play_bar_color" format="reference"/>
+        <attr name="accent_color" format="reference"/>
+        <attr name="divider" format="reference"/>
+        <attr name="image_tint" format="reference"/>
+        <attr name="my_selector_layout" format="reference"/>
+        <attr name="text_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RadarView">
+        <!--圆圈和交叉线的颜色-->
+        <attr name="circleColor" format="color" />
+        <!--圆圈的数量-->
+        <attr name="circleNum" format="integer" />
+        <!--扫描的颜色 RadarView会对这个颜色做渐变透明处理-->
+        <attr name="sweepColor" format="color" />
+        <!--水滴的颜色-->
+        <attr name="raindropColor" format="color" />
+        <!--水滴的数量 这里表示的是水滴最多能同时出现的数量。因为水滴是随机产生的，数量是不确定的-->
+        <attr name="raindropNum" format="integer" />
+        <!--是否显示交叉线-->
+        <attr name="showCross" format="boolean" />
+        <!--是否显示水滴-->
+        <attr name="showRaindrop" format="boolean" />
+        <!--扫描的转速，表示几秒转一圈-->
+        <attr name="speed" format="float" />
+        <!--水滴显示和消失的速度-->
+        <attr name="flicker" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="BarWavesView">
+        <attr name="barColor" format="color" /> <!--横条颜色-->
+
+        <!--确定控件绘制高度 未指定明确高度时-->
+        <attr name="barHeight" format="dimension" /> <!--横条高度-->
+        <attr name="waveRange" format="dimension" /> <!--波浪条极差（最高与最低的差值）-->
+
+        <attr name="waveMinHeight" format="dimension" /> <!--波浪条最小高度-->
+
+        <!--确定控件绘制宽度 未指定明确宽度时-->
+        <attr name="waveColor" format="color" /> <!--波浪条颜色-->
+        <attr name="waveWidth" format="dimension" /> <!--波浪条宽度-->
+        <attr name="waveNumber" format="integer" /> <!--波浪条数量-->
+        <attr name="waveInterval" format="dimension" /> <!--波浪间隔-->
+
+        <attr name="fallAutomatically" format="boolean"/> <!--波浪条高度大于最小高度时自动坠落-->
+        <attr name="fallDuration" format="integer" /> <!--波浪条坠落事件（毫秒，默认 1300）-->
+    </declare-styleable>
+
+</resources>
